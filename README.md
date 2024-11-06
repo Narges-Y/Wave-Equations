@@ -19,5 +19,6 @@ In general, it is recommended to keep the Courant number (CFL) below 1 in orde
 The explicit methods have a stability condition of $$\( CFL ≤ 1 \)$$, while for implicit method, an appropriate time step must be selected.
 ![NVQbRKTF50NM0X3g0U7a04LD](https://github.com/user-attachments/assets/62f03e86-b667-411e-b233-7aa38fc3b021)
 
-Grid Generation
+##### Grid Generation
+
 $$ L = 5, \quad \text{Number of grid points} = 51 \rightarrow \Delta x = \frac{L}{n - 1} \rightarrow x(i) = (i - 1) \times \Delta x $$
