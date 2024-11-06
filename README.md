@@ -14,6 +14,8 @@ Nonlinear
 
 $$ \( F = \frac{u^2}{2} \) → \( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} = 0 \) $$  
 
+##### CFL 
+
 In general, it is recommended to keep the Courant number (CFL) below 1 in order to assure the stability of the numerical schemes and accuracy of the solution.
 
 The explicit methods have a stability condition of $$\( CFL ≤ 1 \)$$, while for implicit method, an appropriate time step must be selected.
@@ -21,4 +23,4 @@ The explicit methods have a stability condition of $$\( CFL ≤ 1 \)$$, while fo
 
 ##### Grid Generation
 
-$$ L = 5, \quad \text{Number of grid points} = 51 \rightarrow \Delta x = \frac{L}{n - 1} \rightarrow x(i) = (i - 1) \times \Delta x $$
+$$ L=5,\quad \text{Number of grid points}=51\rightarrow \Deltax=\frac{L}{n-1}\rightarrowx(i)=(i-1)\times\Deltax $$
