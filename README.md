@@ -20,7 +20,13 @@ In general, it is recommended to keep the Courant number (CFL) below 1, in ord
 
 The explicit methods have a stability condition of $$\( CFL ≤ 1 \)$$, while for implicit method, an appropriate time step must be selected.
 
-![NVQbRKTF50NM0X3g0U7a04LD](https://github.com/user-attachments/assets/62f03e86-b667-411e-b233-7aa38fc3b021)
+Linear
+
+$$ CFL = c \left( \frac{\Delta t}{\Delta x} \right) \rightarrow c = 1.0 \rightarrow \Delta t = \frac{CFL \cdot (\Delta x)}{c} $$
+
+Nonlinear
+
+$$ \text{CFL} = u \, \text{max} \left( \frac{\Delta t}{\Delta x} \right) \rightarrow u \, \text{max} = 1.0 \rightarrow \Delta t = \frac{\text{CFL} \, (\Delta x)}{u \, \text{max}} $$
 
 ##### Grid Generation
 
