@@ -38,3 +38,5 @@ $$ u(n,t) = 2 u(n-1,t) - u(n-2,t) $$
 ![CWMHY6ghStS9BNUS1LWPVfHe](https://github.com/user-attachments/assets/e79e3507-9e8d-4bec-ac1a-5b6c2d9b1465)
 
 ### Nonlinear Equation
+
+![138tr9X1AKbBCgPBW1UMRE27](https://github.com/user-attachments/assets/a3becc73-ea9e-423f-b6a3-7bc547f3ae2b)
