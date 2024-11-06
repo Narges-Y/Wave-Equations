@@ -5,6 +5,7 @@ For the numerical solution of the 1D Inviscid Burgers' equation, explicit method
 
 #### 1D Inviscid Burgers' equation
 $$ \( \frac{\partial u}{\partial t} + \frac{\partial F}{\partial x} = 0 \) $$
+
 Linear 
 $$ \( F = cu \) → \( \frac{\partial u}{\partial t} + c \frac{\partial u}{\partial x} = 0 \) $$
 
