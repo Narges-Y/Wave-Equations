@@ -7,7 +7,9 @@ For the numerical solution of the 1D Inviscid Burgers' equation, explicit method
 $$ \( \frac{\partial u}{\partial t} + \frac{\partial F}{\partial x} = 0 \) $$
 
 Linear 
+
 $$ \( F = cu \)  ->  \( \frac{\partial u}{\partial t} + c \frac{\partial u}{\partial x} = 0 \) $$
 
 Nonlinear 
+
 $$ \( F = \frac{u^2}{2} \)  ->  \( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} = 0 \) $$  
