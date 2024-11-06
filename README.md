@@ -13,3 +13,7 @@ $$ \( F = cu \) → \( \frac{\partial u}{\partial t} + c \frac{\partial u}{\part
 Nonlinear 
 
 $$ \( F = \frac{u^2}{2} \) → \( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} = 0 \) $$  
+
+In general, it is recommended to keep the Courant number (CFL) below 1 in order to assure the stability of the numerical schemes and accuracy of the solution.
+
+The explicit methods have a stability condition of $$\( CFL < 1 \)$$, while for implicit methods, an appropriate time step must be selected.
