@@ -30,3 +30,10 @@ $$ \Delta x= \frac{L}{n-1} \rightarrow  x(i)=(i-1) \Delta x $$
 
 $$ u(0,t) = 1 $$
 $$ u(n,t) = 2 u(n-1,t) - u(n-2,t) $$
+
+## Results
+
+### Linear Equation
+
+![CWMHY6ghStS9BNUS1LWPVfHe](https://github.com/user-attachments/assets/e79e3507-9e8d-4bec-ac1a-5b6c2d9b1465)
+
