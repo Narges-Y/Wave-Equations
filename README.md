@@ -24,9 +24,10 @@ Linear
 
 $$ CFL = c \left( \frac{\Delta t}{\Delta x} \right) \rightarrow c = 1.0 \rightarrow \Delta t = \frac{CFL \cdot (\Delta x)}{c} $$
 
+
 Nonlinear
 
-$$ CFL = u_{max}\left(\frac{\Delta t}{\Delta x}\right) \rightarrow u_{max} = 1.0 \rightarrow \Delta t = \frac{CFL \cdot (\Delta x)}{u_{max}} $$
+$$ CFL = u_{max}\left(\frac{\Delta t}{\Delta x}\right) \rightarrow u_{max} = 1.0 \rightarrow \Delta t = \frac{CFL(\Delta x)}{u_{max}} $$
 
 ##### Grid Generation
 
