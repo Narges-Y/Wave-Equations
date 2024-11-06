@@ -24,3 +24,5 @@ The explicit methods have a stability condition of $$\( CFL ≤ 1 \)$$, while fo
 ##### Grid Generation
 
 $$ \Delta x= \frac{L}{n-1} \rightarrow x(i)=(i-1) \times \Delta x $$
+
+$$ dt= \frac{cfl \cdot dx}{c} $$
