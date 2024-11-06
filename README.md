@@ -22,7 +22,8 @@ The explicit methods have a stability condition of $$\( CFL ≤ 1 \)$$, while fo
 
 Linear
 
-$$ CFL = c \left( \frac{\Delta t}{\Delta x} \right) \rightarrow c = 1.0 \rightarrow \Delta t = \frac{CFL \cdot (\Delta x)}{c} $$
+$$ CFL = c \left( \frac{\Delta t}{\Delta x} \right) \rightarrow c = 1.0 \rightarrow \Delta t = \frac{CFL(\Delta x)}{c} $$
+
 
 
 Nonlinear
