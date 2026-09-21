@@ -3,41 +3,155 @@ The Exact Solution and Numerical Methods for Solving Hyperbolic Equations (Linea
 
 For the numerical solution of the 1D Inviscid Burgers' equation, explicit methods such as Lax, Upwind Differencing, and Lax-Wendroff, as well as the implicit Beam-Warming method, have been employed.
 
-#### 1D Inviscid Burgers' equation
-$$ \( \frac{\partial u}{\partial t} + \frac{\partial F}{\partial x} = 0 \) $$
+# 1D Inviscid Burgers' Equation
 
-Linear 
+The one-dimensional inviscid Burgers' equation is written in conservative form as
 
-$$ \( F = cu \) → \( \frac{\partial u}{\partial t} + c \frac{\partial u}{\partial x} = 0 \) $$
+$$
+\frac{\partial u}{\partial t}
++
+\frac{\partial F}{\partial x}
+= 0
+$$
 
-Nonlinear 
+## Linear Case
 
-$$ \( F = \frac{u^2}{2} \) → \( \frac{\partial u}{\partial t} + u \frac{\partial u}{\partial x} = 0 \) $$  
+For a linear flux function,
 
-##### CFL 
+$$
+F = cu
+$$
 
-In general, it is recommended to keep the Courant number (CFL) below 1, in order to assure the stability of the numerical schemes and accuracy of the solution.
+the governing equation becomes
 
-The explicit methods have a stability condition of $$\( CFL ≤ 1 \)$$, while for implicit method, an appropriate time step must be selected.
+$$
+\frac{\partial u}{\partial t}
++
+c\frac{\partial u}{\partial x}
+= 0
+$$
 
-Linear
+## Nonlinear Case
 
-$$ CFL = c \left( \frac{\Delta t}{\Delta x} \right) \rightarrow c = 1.0 \rightarrow \Delta t = \frac{CFL(\Delta x)}{c} $$
+For the nonlinear Burgers' flux,
 
+$$
+F = \frac{u^2}{2}
+$$
 
+the governing equation becomes
 
-Nonlinear
+$$
+\frac{\partial u}{\partial t}
++
+u\frac{\partial u}{\partial x}
+= 0
+$$
 
-$$ CFL = u_{max}\left(\frac{\Delta t}{\Delta x}\right) \rightarrow u_{max} = 1.0 \rightarrow \Delta t = \frac{CFL(\Delta x)}{u_{max}} $$
+---
 
-##### Grid Generation
+# CFL Condition
 
-$$ \Delta x= \frac{L}{n-1} \rightarrow  x(i)=(i-1) \Delta x $$
+In general, it is recommended to keep the Courant number (CFL) below 1 in order to ensure the stability of the numerical schemes and the accuracy of the solution.
 
-##### Boundary Conditions
+For explicit methods, the stability condition is
 
-$$ u(0,t) = 1 $$
-$$ u(n,t) = 2 u(n-1,t) - u(n-2,t) $$
+$$
+\mathrm{CFL} \leq 1
+$$
+
+For implicit methods, an appropriate time step should still be selected to maintain the desired accuracy.
+
+## Linear Case
+
+The CFL number is defined as
+
+$$
+\mathrm{CFL}
+=
+c\left(\frac{\Delta t}{\Delta x}\right)
+$$
+
+For
+
+$$
+c = 1.0
+$$
+
+the time step is calculated as
+
+$$
+\Delta t
+=
+\frac{\mathrm{CFL}\,\Delta x}{c}
+$$
+
+## Nonlinear Case
+
+For the nonlinear Burgers' equation, the CFL number is
+
+$$
+\mathrm{CFL}
+=
+u_{\max}
+\left(
+\frac{\Delta t}{\Delta x}
+\right)
+$$
+
+For
+
+$$
+u_{\max} = 1.0
+$$
+
+the time step is calculated as
+
+$$
+\Delta t
+=
+\frac{\mathrm{CFL}\,\Delta x}{u_{\max}}
+$$
+
+---
+
+# Grid Generation
+
+For a one-dimensional domain of length $L$ with $n$ grid points, the spatial grid size is
+
+$$
+\Delta x
+=
+\frac{L}{n-1}
+$$
+
+and the grid points are defined as
+
+$$
+x(i)
+=
+(i-1)\Delta x
+$$
+
+---
+
+# Boundary Conditions
+
+The boundary conditions are defined as
+
+$$
+u(0,t) = 1
+$$
+
+and
+
+$$
+u(n,t)
+=
+2u(n-1,t)
+-
+u(n-2,t)
+$$
 
 ## Results
 
